@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { IndexAddress } from './pages/address'
-import { IndexClient } from './pages/clients'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
-     <IndexAddress />
-     <IndexClient /> 
+      <div className="mb-3">
+        <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
+        <input type="email" className="form-control" id="exampleFormControlInput1" />
+      </div>
+      <div className="mb-3">
+        <label htmlFor="exampleFormControlTextarea1" className="form-label">Example textarea</label>
+        <textarea className="form-control" id="exampleFormControlTextarea1"></textarea>
+      </div>
     </>
   )
 }
