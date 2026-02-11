@@ -2,6 +2,19 @@ import { useState } from 'react';
 import { ClinentApi } from '../../apis/clients/client.api';
 import type { ClientResponse } from '../../models/client-model.req';
 
+
+export const nomeComponete = () => {
+
+    // Toda parte lógica do componente.
+
+
+    return (
+        <>
+        <p>Almir</p>
+        </>
+    )
+}
+
 export const IndexClient = () => {
 
     const [reponse, setResponse] = useState<ClientResponse | null>(null);
@@ -13,8 +26,9 @@ export const IndexClient = () => {
     return (
         <div>
             <h1>IndexClient</h1>
-            <p>{JSON.stringify(reponse)}</p>
+            <p>{ JSON.stringify(reponse) }</p>
             <input type="button" value="Get" onClick={onclick} />
+            <nomeComponete />
         </div>
     )
 }
